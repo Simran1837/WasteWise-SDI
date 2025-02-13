@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awareness Page</title>
+    <link rel="stylesheet" href="aware.css">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <!-- <i class="fa-solid fa-bars"></i> -->
+            <img src="logo1.png" alt="" width="200px" height="90px">
+        </div>
+        <div class="head">
+            <h1>Social Awareness Campaigns</h1>
+        </div>
+    </header>
+
+    <nav>
+        <div class="symbols">
+            <div class="symbol sym1">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="symbol sym2">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </div>
+        </div>
+
+        <div class="link">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeMA3v60vJ390kLMfyKk0k0omPXrsJAoeYrhIhCnzIBp9TL8w/viewform?usp=sharing ">Trash Trivia</a></li>
+                <li class="dropdown">
+                    <a href="awareness.html">Solutions</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="bestOut.html">Recycle Waste</a></li>
+                        <li><a href="composting.html">Composting Tips</a></li>
+                        <li><a href="awareness.html">Campaigns</a></li>
+                        <li><a href="smart.html">Smart Bins</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+       
+        <div class="contact">
+            <a href="feedback.html"><button class="contact-btn">Contact Us</button></a>
+        </div>
+    </nav>
+
+    <section class="definition">
+        <div class="head"><h2>Why Social Media Awareness Matters?</h2></div>
+        <div class="intro">
+        <div>
+        <p>
+            Waste segregation starts with awareness. Our campaign aims to inspire communities to adopt responsible waste
+            disposal practices through fun and interactive activities. By educating and engaging, we can create a cleaner,
+            greener, and more sustainable future.
+        </p>
+        </div>
+        </div>
+    </section>
+
+    <h2>Challenges</h2>
+    <div class="container">
+        <div class="card" onclick="showDetails('idea1')">
+            <img src="https://images.stockcake.com/public/2/9/d/29d5535c-6590-4a63-a008-e6334cfdb4df_medium/recycling-made-fun-stockcake.jpg" alt="Challenge Idea 1">
+            <div class="card-title">SortingMadeFun Weekly Themes</div>
+        </div>
+        <div class="card" onclick="showDetails('idea2')">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT10jUXpMBsjN4R1cks7xD8TBgPY9MRsbZVoQ&s" alt="Challenge Idea 2">
+            <div class="card-title">Before & After Challenge</div>
+        </div>
+
+        <div class="card" onclick="showDetails('idea3')">
+            <img src="https://earth5r.org/wp-content/uploads/2024/03/Cleanup-Waste-Segregation-Volunteers-Earth5R-Mumbai-India-Environmental-NGO--1024x639.jpg" alt="Challenge Idea 3">
+            <div class="card-title">Group/Community Challenge</div>
+        </div>
+
+        <div class="card" onclick="showDetails('idea4')">
+            <img src="https://propertycloud.in/blog/wp-content/uploads/2023/07/Best-out-of-waste-ideas-for-home-decoration-Creative-Bookmark-Idea-1024x576.png" alt="Challenge Idea 4">
+            <div class="card-title">Creative DIY Challenge</div>
+        </div>
+        <div class="card " onclick="showDetails('idea5')">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx9X2PgsbJqaovdNV8Sq2PZxuxF9w8lg_tKA&s" alt="Challenge Idea 5">
+            <div class="card-title">Infographic/Video Challenge</div>
+        </div>
+    </div>
+
+    <h2>Recognition</h2>
+    <div class="container">
+        <div class="card" onclick="showDetails('idea6')">
+            <img src="shoutOut.jpg" alt="Recognition Idea 1">
+            <div class="card-title">Spotlight on Social Media</div>
+        </div>
+        <div class="card" onclick="showDetails('idea7')">
+            <img src="https://edit.org/img/blog/rkk-ranking-leaderboard-template-download-free.jpg" alt="Recognition Idea 2">
+            <div class="card-title">Website Leaderboard</div>
+        </div>
+        <div class="card" onclick="showDetails('idea8')">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGZ4DHuiScFYHaJAxT0qUtdgFWpNf9ObUJ3Q&s" alt="Recognition Idea 3">
+            <div class="card-title">Green Champion of the Week</div>
+        </div>
+        <div class="card" onclick="showDetails('idea9')">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD8CyYmbLa_yQuNvWcjUkaXnAlGzNEhOWNmA&s" alt="Recognition Idea 4">
+            <div class="card-title">Virtual Certificate of Participation</div>
+        </div>
+        <div class="card" onclick="showDetails('idea10')">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3x95O61xQ11K4fTY30lFW0_kWNgspf947lQ&s" alt="Recognition Idea 5">
+            <div class="card-title">Community Wall of Fame</div>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay" onclick="hideDetails()"></div>
+    <div class="details" id="idea1">
+        <h2>Weekly Challenges</h2>
+        <hr>
+        <p>The #SortingMadeFun Weekly Themes challenge encourages communities to engage in waste segregation through creative 
+            weekly themes. Each week introduces a new focus, such as reducing plastic use or promoting composting. Participants 
+            share their sorting efforts and projects online using the hashtag. The goal is to make waste segregation fun and educational 
+            while raising awareness about its environmental importance. By joining in, individuals contribute to a cleaner, more 
+            sustainable world. The challenge helps create a sense of community through interactive, eco-friendly activities.</p>
+            </div>
+            <div class="details" id="idea2">
+                <h2>Before and After</h2>
+                <hr>
+                <p>The Before & After Challenge highlights the impact of waste segregation. In the "Before" images, show
+                     cluttered waste bins with mixed trash like plastic, paper, and food scraps, or an unsorted pile of recyclables.
+                      Environmental scenes can depict areas covered in litter, illustrating the need for change. In the "After" images,
+                       showcase bins neatly sorted into categories like plastic, paper, and organic waste, demonstrating proper
+                        segregation. Alternatively, show a cleaned-up park, beach, or street free of litter, highlighting the positive
+                         outcomes of responsible waste management. The challenge aims to inspire communities to take action and see the
+                          tangible results of their efforts.</p>
+                    </div>
+                    <div class="details" id="idea3">
+                        <h2>Group Challenge</h2>
+                        <hr>
+                        <p>The Group/Community Challenge encourages communities to work together in segregating waste and promoting
+                             sustainable practices. Groups, schools, or local organizations can form teams to tackle waste segregation 
+                             within their neighborhoods. Each team is tasked with collecting, sorting, and recycling waste in an
+                              organized and efficient manner. The goal is to foster teamwork while raising awareness about the importance 
+                              of proper waste disposal. By collaborating, participants can make a significant impact on the cleanliness
+                               of their environment. The challenge also promotes collective responsibility and encourages people to lead
+                                by example in their communities.</p>
+                            </div>
+                            <div class="details" id="idea4">
+                                <h2>Group Challenge</h2>
+                                <hr>
+                                <p>The Creative DIY Challenge invites participants to transform waste materials into useful or
+                                     decorative items through imaginative, hands-on projects. Using recyclable items like plastic
+                                      bottles, cardboard, or old clothes, individuals can create anything from home decor to 
+                                      functional tools. This challenge aims to inspire creativity while promoting the idea of reusing 
+                                      materials instead of discarding them. Participants can share their DIY creations on social media,
+                                       showcasing how waste can be repurposed into something new. The goal is to encourage sustainable
+                                        living through creativity and resourcefulness. It’s a fun way to reduce waste while adding a
+                                         personal touch to everyday life.</p>
+                                    </div>
+                                    <div class="details" id="idea5">
+                                        <h2>Video Challenge</h2>
+                                        <hr>
+                                        <p>The Video Making Challenge encourages participants to create informative or creative
+                                             videos about waste segregation and sustainability. Whether through tutorials, awareness 
+                                             campaigns, or showcasing DIY projects, participants use video to spread the message of
+                                              proper waste disposal and recycling. The challenge helps highlight the importance of
+                                               educating others through visual content, making the information engaging and accessible.
+                                                Participants can share their videos on social media or local platforms, reaching a broader
+                                                 audience. The goal is to inspire action, spark discussions, and make waste segregation a
+                                                  fun and informative topic. This challenge combines creativity with environmental 
+                                                  consciousness to promote positive change.</p>
+                                        </div>
+                                       
+
+<!-- Recognition detail sections -->
+<div class="details" id="idea6">
+    <h2>Spotlight on Social Media</h2>
+    <hr>
+    <p>The Shout-Out on Social Media challenge encourages participants to share their waste segregation efforts on platforms like Instagram or Twitter. By posting photos or videos with relevant hashtags, they inspire others to take part in the movement. It’s a simple way to spread awareness and create a community of eco-conscious individuals.</p>
+</div>
+
+<div class="details" id="idea7">
+    <h2>Website Leaderboard</h2>
+    <hr>
+    <p>Showcase the top participants or communities actively contributing under the hashtag on the website.</p>
+</div>
+
+<div class="details" id="idea8">
+    <h2>Green Champion of the Week</h2>
+    <hr>
+    <p>Highlight one individual or group each week with a profile story or interview featured on your site.</p>
+</div>
+
+<div class="details" id="idea9">
+    <h2>Virtual Certificate of Participation</h2>
+    <hr>
+    <p>Provide downloadable certificates for participants who actively join challenges, fostering a sense of accomplishment.</p>
+</div>
+
+<div class="details" id="idea10">
+    <h2>Community Wall of Fame</h2>
+    <hr>
+    <p>Add a dynamic section on the website that displays participant names, photos, or posts in a scrolling gallery for recognition.</p>
+</div>
+
+ 
+   
+
+    <script>
+        function showDetails(id) {
+            document.getElementById('overlay').style.display = 'block';
+            document.getElementById(id).style.display = 'block';
+        }
+
+        function hideDetails() {
+            document.getElementById('overlay').style.display = 'none';
+            const details = document.querySelectorAll('.details');
+            details.forEach(detail => detail.style.display = 'none');
+        }
+    </script>
+</body>
+</html>

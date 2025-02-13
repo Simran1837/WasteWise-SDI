@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Composting Page</title>
+    <link rel="stylesheet" href="compost.css">
+    <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <!-- <i class="fa-solid fa-bars"></i> -->
+            <img src="logo1.png" alt="" width="200px" height="90px">
+        </div>
+        <div class="head">
+            <h1>Composting Ways</h1>
+        </div>
+    </header>
+
+    <nav>
+        <div class="symbols">
+            <div class="symbol sym1">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="symbol sym2">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </div>
+        </div>
+
+        <div class="link">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeMA3v60vJ390kLMfyKk0k0omPXrsJAoeYrhIhCnzIBp9TL8w/viewform?usp=sharing ">Trash Trivia</a></li>
+                <li class="dropdown">
+                    <a href="composting.html">Solutions</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="bestOut.html">Recycle Waste</a></li>
+                        <li><a href="composting.html">Composting Tips</a></li>
+                        <li><a href="awareness.html">Campaigns</a></li>
+                        <li><a href="smart.html">Smart Bins</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+       
+        <div class="contact">
+            <a href="feedback.html"><button class="contact-btn">Contact Us</button></a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="card" onclick="showDetails('idea1')">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk0QDHQnt4vbAWaS54V16NbxQUS8AVHFD4Hg&s" alt="Illustration explaining composting">
+            <div class="card-title">What is Composting?</div>
+        </div>
+
+        <div class="card" onclick="showDetails('idea2')">
+            <img src="https://fileserver.teachstarter.com/thumbnails/14219-why-should-we-compost-poster-media-1-600x400.png" alt="Reasons to compost">
+            <div class="card-title">Why Should We Compost?</div>
+        </div>
+
+        <div class="card" onclick="showDetails('idea3')">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK5fCwneDKNamATgcO5xFnCswo0Krx2jbA0Q&s" alt="How to use compost effectively">
+            <div class="card-title">How to Use Compost?</div>
+        </div>
+
+        <div class="card" onclick="showDetails('idea4')">
+            <img src="https://www.nature-and-garden.com/wp-content/uploads/sites/4/2020/09/uses-compost.jpg" alt="Steps of composting process">
+            <div class="card-title">The Composting Process</div>
+        </div>
+
+        <div class="card" onclick="showDetails('idea5')">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrUY30emOPMMa_KfIDwYbBZWwC3TlZxGb4ng&s" alt="Result of composting">
+            <div class="card-title">What is the Result?</div>
+        </div>
+
+        <div class="card" onclick="showDetails('idea6')">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8rpYFSyUYdQwpL-TDemEm7yVfwDE_YA43iQ&s" alt="Composting tips">
+            <div class="card-title">Tips for Better Composting</div>
+        </div>
+    </div>
+
+    <div class="overlay" id="overlay" onclick="hideDetails()"></div>
+
+    <div class="details" id="idea1">
+        <h2>Composting</h2>
+        <hr>
+        <p>Composting is the process of breaking down organic waste, such as food scraps, yard trimmings, and other biodegradable
+            materials, into nutrient-rich soil or humus. This decomposition is carried out by microorganisms, including bacteria,
+            fungi, and insects, which work to break down the material over time. The process occurs in a compost bin or pile, where
+            the organic matter is kept in a controlled environment to ensure efficient decomposition.
+
+            Composting helps reduce the amount of waste sent to landfills, enriches soil, improves plant growth, and reduces the need
+            for chemical fertilizers. The most common method of composting is aerobic, which requires regular turning of the compost
+            to ensure it gets enough oxygen for microorganisms to thrive.</p>
+    </div>
+
+    <div class="details" id="idea2">
+        <h2>Need of Composting</h2>
+        <hr>
+        <p>
+           <b> 1. Reduces Waste: </b>Composting keeps biodegradable waste out of landfills, reducing methane emissions and pollution.<br>
+            <b>2. Enriches Soil:</b> Compost enhances soil fertility, supports plant growth, and improves water retention.<br>
+           <b> 3. Closes the Loop:</b> It’s a sustainable way to recycle organic waste into a useful resource for home and community gardens.
+        </p>
+    </div>
+
+    <div class="details" id="idea3">
+        <h2>How to use</h2>
+        <hr>
+        <p>
+            1. <b>In Gardens</b>: Mix compost into your garden soil to enhance its fertility and water-holding capacity. Spread it around plants as mulch to suppress weeds and retain moisture.<br>
+            2. <b>For Potted Plants</b>: Add a thin layer of compost to the topsoil in pots to provide plants with nutrients. Mix compost with regular soil for a balanced growing medium.<br>
+            3. <b>Lawn Care</b>: Sprinkle compost over your lawn to improve soil health and promote lush, green grass.<br>
+            4. <b>Compost Tea</b>: Soak a bag of compost in water for a few days to create a nutrient-rich liquid fertilizer. Use this to water plants.
+        </p>
+    </div>
+
+    <div class="details" id="idea4">
+        <h2>Composting Process</h2>
+        <hr>
+        <p>
+            Promoting home and community composting starts with understanding the process. Here’s a simple guide:<br>
+            1. <b>Collect Organic Waste</b>: Combine greens (nitrogen sources like fruit peels) and browns (carbon sources like dry leaves).<br>
+            2. <b>Layer in a Bin</b>: Set up a compost bin with alternating layers of greens and browns (2:1 ratio).<br>
+            3. <b>Maintain</b>: Turn the pile regularly and keep it moist but not soggy.<br>
+            4. <b>Wait</b>: Decomposition takes 2–6 months. Finished compost looks dark, crumbly, and smells earthy.
+        </p>
+    </div>
+
+    <div class="details" id="idea5">
+        <h2>Result</h2>
+        <hr>
+        <p>
+            Finished compost is:<br>
+            - <b>Dark and Crumbly</b>: Looks like rich, fertile soil.<br>
+            - <b>Nutrient-rich</b>: Packed with essential nutrients for plants.<br>
+            - <b>Earthy Smelling</b>: Free of bad odors, indicating it’s fully decomposed.<br>
+            By using compost in urban gardens and landscapes, we create greener spaces, reduce landfill dependency, and contribute to a cleaner, more sustainable future.
+        </p>
+    </div>
+
+    <div class="details" id="idea6">
+        <h2>TIPS </h2>
+        <hr>
+        <p>
+            Here are some composting tips:
+
+1. <B>Balance Green and Brown Materials</B>: Use a 2:1 ratio of brown (carbon-rich) to green (nitrogen-rich) materials.<BR>
+
+2. <B>Chop and Shred</B>: Break large items into smaller pieces for quicker decomposition.<BR>
+
+3. <B>Turn Regularly</B>: Aerate by turning the compost every few weeks to promote airflow and prevent odors.<BR>
+
+4. <B>Maintain Moisture</B>: Keep compost damp, like a wrung-out sponge, to support microorganisms.<BR>
+
+5. <B>Avoid Dairy, Meat, and Oils</B>: These can attract pests and slow down the process.<BR>
+
+6. <B>Add Worms</B>: For vermicomposting, worms can accelerate decomposition and improve compost quality.<BR>
+
+7. <B>Use a Bin or Pile</B>: Keep compost contained to stay organized and tidy.<BR>
+
+8. <B>Monitor Temperature</B>: Maintain a temperature of 130-160°F (54-71°C) for optimal decomposition.<BR>
+
+        </p>
+    </div>
+
+    <script>
+        function showDetails(id) {
+            document.getElementById('overlay').style.display = 'block';
+            document.getElementById(id).style.display = 'block';
+        }
+
+        function hideDetails() {
+            document.getElementById('overlay').style.display = 'none';
+            const details = document.querySelectorAll('.details');
+            details.forEach(detail => detail.style.display = 'none');
+        }
+    </script>
+</body>
+
+</html>
